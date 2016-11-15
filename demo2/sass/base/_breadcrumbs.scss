@@ -1,0 +1,5 @@
+.breadcrumb{
+  font-size: .875em;
+  a{ margin-right: 1.5em; display: inline-block; }
+  a:after{ content: $icon-chevron-right; font-family: icons; position: absolute; margin: 0 0 0 .52em; font-size: .875em; }
+}

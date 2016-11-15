@@ -1,0 +1,68 @@
+@import "theme";
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900');
+
+.wrapper{ max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 16px; }
+img{ max-width: 100%; height: auto; }
+
+
+body{ color: $darkGray; }
+#page{ display: flex; flex-direction: column; min-height: 100vh;}
+#main { flex: 1; }
+a{ color: $darkBlue; }
+#header{
+  background: $mainColor; margin-bottom: $verticalSpace;
+  .wrapper{ display: flex; }
+  #name-and-slogan{ line-height: 50px; }
+  a{ color: white; text-decoration: none; }
+}
+#main-menu{
+  margin-left: auto; line-height: 50px;
+  ul{ margin: 0; padding: 0; }
+  li{ display: inline-block; }
+  a{display:block;padding:15px;font-size:1.25em; text-decoration: none; }
+  a:hover{background:darken($mainColor, 10%);}
+  ul ul{ display: none; background: $mainColor; top:50px;}
+  ul ul li a{font-size:1em;}
+}
+.breadcrumb a{
+  text-decoration: none;
+  &:after{ opacity: .5; }
+}
+
+#footer{
+  background: $blue; color: white; box-shadow: inset 0 1px 2px rgba($darkBlue,.7);
+  .wrapper{ padding-top: $verticalSpace; padding-bottom: $verticalSpace; }
+  .footer-nav{
+    width: 80%; max-width: 900px;
+    ul{ list-style: none; padding: 0; margin: 0; }
+    li{ list-style: none; }
+    a{ color: white; font-weight: bold; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    > ul{ display: flex; }
+    > ul > li + li{ margin-left: $horizontalSpace; }
+    > ul > li ul a{ font-weight: normal; font-size: .875em; }
+    ul ul ul{ display: none; }
+  }
+  .footer-top{ display: flex; justify-content: space-between; }
+  .social-media{
+    text-align: right;
+    li{ list-style: none; display: inline-block; }
+    a{ color: white; }
+  }
+  .footer-bottom{
+    background: $darkBlue; text-align: right;
+    small{ display: flex; justify-content: flex-end; }
+    .region-footer{
+      ul{ margin: 0; padding: 0; }
+      li{ list-style: none; display: inline; }
+      a{ color: $lightBlue; text-decoration: none; }
+    }
+  }
+}
+
+// Front Page
+body.front{
+  #header{ margin-bottom: 0; }
+  #messages{ position: absolute; margin-top: 16px; }
+  .view-homepage-slider ul{ padding: 0; margin: 0; list-style: none; }
+}

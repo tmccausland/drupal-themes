@@ -1,0 +1,44 @@
+// Color
+$blue: #18a0b0;
+$veryDarkBlue: #0e606a;
+$darkBlue: #118492;
+$lightBlue: #8ef2fe;
+$darkGreen: #499527;
+$green: #84d063;
+$lightGreen: #f3ffee;
+$veryLightGreen: #f2fbee;
+$darkGray: #2a2a2a;
+$gray: #3e3e3e;
+
+$lightBg: true;
+$mainColor: #18a0b0;
+$reverseColor: white;
+$bgColor: $lightGreen;
+$borderColor: #97c582;
+$boxBgColor: #f2fbee;
+
+$statusBorder: #be7;
+$statusText: $darkGreen;
+$statusBg: white;
+$warningBorder: #ffd162;
+$warningText: #840;
+$warningBg: #fff7bb;
+$errorBorder: #ed541d;
+$errorText: #8c2e0b;
+$errorBg: #fef5f1;
+
+$tableHeader: $mainColor;
+
+$mainFont: 'Raleway', sans-serif;
+$secondaryFont: 'Raleway', sans-serif;
+
+// Other
+$borderRadiusButton: 0;
+$borderRadiusContainer: 0;
+$borderStyle: solid;
+$borderWidth: 1px;
+
+$verticalSpace: 32px;
+$horizontalSpace: 20px;
+
+.button{ border-radius: $borderRadiusButton; background: $mainColor; color: $reverseColor; text-decoration: none; padding: .5em .7em; display: inline-block; }
