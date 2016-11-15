@@ -1,0 +1,27 @@
+@import "../bourbon/neat/_neat";
+@import "../../demo2/sass/_theme";
+
+*{ box-sizing: border-box; }
+h1,h2,h3,h4,h5,h6,p{ margin: 0 0 .75em; }
+
+@import "_icons";
+@import "_normalize";
+@import "_tabs";
+@import "_table";
+@import "_header";
+@import "_form";
+@import "_messages";
+@import "_lists";
+@import "_action-links";
+@import "_breadcrumbs";
+@import "_apps";
+@import "_admin-panel";
+@import "_module-filter";
+@import "_add-content";
+@import "_admin-list";
+@import "_workbench";
+
+body{ background: $bgColor; font-family: $mainFont; }
+.description{ font-size: .875em;}
+.form-item input.error, .form-item textarea.error, .form-item select.error{ border-color: $errorBorder; }
+div.error, .error{ color: $errorText; }

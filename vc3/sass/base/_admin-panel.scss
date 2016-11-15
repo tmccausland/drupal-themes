@@ -1,0 +1,25 @@
+/* Configuration. */
+div.admin .right,
+div.admin .left {
+  width: 50%;
+  margin: 0;
+}
+div.admin .right{ padding-left: $verticalSpace/2; }
+div.admin .left{ padding-right: $verticalSpace/2; }
+div.admin-panel {
+  background: $boxBgColor;
+  border: $borderWidth $borderStyle $borderColor;
+  margin: 0 0 $verticalSpace 0;
+  padding: $horizontalSpace;
+  .body{ padding: 0; }
+  dt {
+    border-top: $borderWidth $borderStyle rgba($borderColor, .5);
+    padding: 7px 0;
+  }
+  dd {
+    margin: 0 0 7px;
+  }
+  .description {
+    margin: 0 0 14px 7px;
+  }
+}

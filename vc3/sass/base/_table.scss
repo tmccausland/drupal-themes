@@ -1,0 +1,49 @@
+/* ------------------ Table Styles ------------------ */
+
+table {
+  border: 0;
+  border-spacing: 0;
+  font-size: 0.857em;
+  width: 100%;
+}
+table table {
+  font-size: 1em;
+}
+table tr th {
+  background: $tableHeader;
+  border-bottom-style: none;
+}
+table tr th,
+table tr th a,
+table tr th a:hover {
+  color: #FFF;
+  font-weight: bold;
+}
+table tbody tr th {
+  vertical-align: top;
+}
+tr td,
+tr th {
+  padding: 10px;
+  border: $borderWidth solid $bgColor;
+  text-align: left; /* LTR */
+}
+tr th{ border: none; }
+tr.odd {
+  background: rgba(lighten($bgColor, 3%), .7);
+}
+tr,
+tr.even {
+  background: rgba(darken($bgColor, 3%), .7);
+}
+td.active {
+    background-color: darken($bgColor, 5%);
+}
+table ul.links {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+table ul.links li {
+  padding: 0 1em 0 0;
+}

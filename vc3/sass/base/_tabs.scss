@@ -1,0 +1,22 @@
+div.tabs{ margin: 0 0 $verticalSpace 0; }
+.tabs.primary{ border-color: $borderColor; padding-left: $horizontalSpace; padding-bottom: 0; overflow: auto; border-bottom: none; box-shadow: inset 0 $borderWidth*-1 0 $borderColor; }
+.tabs.primary li{ float: left; }
+.tabs.primary li + li{ margin-left: 5px; }
+.tabs.primary a{ 
+  // @if $lightBg { background-color: darken($bgColor, 5%); }
+  // @else { background-color: lighten($bgColor, 5%); }
+  background-color: rgba($borderColor, .15);
+  display: block; padding: 7px 12px; margin: 0; border-color: $borderColor; border-width: $borderWidth;  border-bottom-style: solid; border-top-left-radius: $borderRadiusButton; border-top-right-radius: $borderRadiusButton;
+  &:hover{ border-color: $borderColor; }
+}
+.tabs.primary .active a{ background: $bgColor; border-width: $borderWidth; border-color: $borderColor; border-bottom-color: $bgColor; }
+
+.tabs.secondary{ padding: 0 0 1em 0; font-size: .9em; border-bottom: $borderWidth solid $borderColor; }
+ul.secondary a.active{ border-color: $borderColor; }
+
+div.vertical-tabs{ border: 1px solid darken($bgColor, 12%); }
+.vertical-tabs ul.vertical-tabs-list{ border-top: none; }
+.vertical-tabs ul.vertical-tabs-list li{ 
+  border: 1px solid darken($bgColor, 12%); background: desaturate(darken($bgColor, 8%), 10%); 
+  &.selected{ background: darken($bgColor, 3%); }
+}
