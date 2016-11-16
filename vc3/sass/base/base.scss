@@ -1,23 +1,24 @@
+
 @import "../../../demo2/sass/_theme";
 
 *{ box-sizing: border-box; }
 h1,h2,h3,h4,h5,h6,p{ margin: 0 0 .75em; }
 
+@import "_action-links";
+@import "_add-content";
+@import "_admin-list";
+@import "_admin-panel";
+@import "_apps";
+@import "_breadcrumbs";
+@import "_form";
+@import "_header";
 @import "_icons";
+@import "_lists";
+@import "_messages";
+@import "_module-filter";
 @import "_normalize";
 @import "_tabs";
 @import "_table";
-@import "_header";
-@import "_form";
-@import "_messages";
-@import "_lists";
-@import "_action-links";
-@import "_breadcrumbs";
-@import "_apps";
-@import "_admin-panel";
-@import "_module-filter";
-@import "_add-content";
-@import "_admin-list";
 @import "_workbench";
 
 body{ background: $bgColor; font-family: $mainFont; }

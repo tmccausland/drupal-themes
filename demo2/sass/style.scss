@@ -7,7 +7,7 @@ img{ max-width: 100%; height: auto; }
 
 body{ color: $darkGray; }
 #page{ display: flex; flex-direction: column; min-height: 100vh;}
-#main { flex: 1; }
+#main { }
 a{ color: $darkBlue; }
 #header{
   background: $mainColor; margin-bottom: $verticalSpace;
