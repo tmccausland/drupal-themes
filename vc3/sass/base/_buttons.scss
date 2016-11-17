@@ -1,2 +1,2 @@
 .button{ border-radius: $borderRadiusButton; background: $mainColor; color: $reverseColor; text-decoration: none; padding: .5em .7em; display: inline-block; }
-.button:hover{background: darken($mainColor, 15%);}
+.button:hover{background: mix($mainColorMix, $mainColor, $mainColorMixPerc);}

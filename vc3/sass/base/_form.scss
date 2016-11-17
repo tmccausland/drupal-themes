@@ -6,7 +6,7 @@ input[type=text], input[type=password], select{ border: $borderColor 1px solid; 
 input[type=submit], input[type=button]{ padding: 4px 8px; font-size: .95em; }
 
 fieldset {
-  background: darken($bgColor, 3%);
+  background: mix($bgColorMix, $bgColor, $bgColorMixPerc);
   border: 1px solid desaturate(darken($bgColor, 12%), 20%);
   margin: 0;
   margin-bottom: $verticalSpace;
@@ -19,7 +19,7 @@ $legendHeight: 30px;
   padding: 10px $horizontalSpace;
 }
 fieldset legend {
-  background: desaturate(darken($bgColor, 12%), 20%);
+  background: mix($bgColorMix, $bgColor, $bgColorMixPerc);
   display: block;
   font-weight: bold;
   height: $legendHeight + 1px;
@@ -27,7 +27,7 @@ fieldset legend {
   width: 100%;
   position: relative;
   top: $legendHeight/2;
-  border-top: 1px solid desaturate(darken($bgColor, 12%), 20%);
+  border-top: 1px solid mix($bgColorMix, $bgColor, $bgColorMixPerc);
   border-top-left-radius: $borderRadiusContainer;
   border-top-right-radius: $borderRadiusContainer;
 }
